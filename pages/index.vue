@@ -198,13 +198,12 @@
         />
       </div>
     </div>
-    
+
     <UnmarkmeFooter class="mt-6 bg-white" />
   </div>
 </template>
 
 <script setup>
-import { ref } from "vue";
 import { Dialog, DialogPanel } from "@headlessui/vue";
 
 useHead({
