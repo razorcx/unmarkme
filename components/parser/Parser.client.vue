@@ -2,11 +2,11 @@
   <div class="grid w-full min-h-screen mx-auto">
     <div class="relative h-full container mx-auto">
       <UnmarkmeNav class="z-[999] bg-white" />
-      <main class="flex flex-wrap md:flex-nowrap">
+      <main class="flex flex-wrap md:flex-nowrap space-y-24 md:space-y-0 mt-10 ">
         <div
-          class="flex flex-col space-y-5 w-full items-center mt-12 mx-auto md:border-r-2"
+          class="flex flex-col space-y-5 w-full items-center mx-auto md:border-r-2"
         >
-          <div class="prose w-full mt-8 px-4 md:px-6 lg:px-0">
+          <div class="prose w-full px-4 md:px-6 lg:px-0">
             <h2>HTML to Markdown</h2>
             <h3>HTML</h3>
             <p>Type or Copy/Clip your HTML here 👇</p>
@@ -23,8 +23,8 @@
             <div v-html="backToHtml" class="border px-6 py-4 shadow-md"></div>
           </div>
         </div>
-        <div class="flex flex-col space-y-5 w-full items-center mt-12 mx-auto">
-          <div class="prose w-full mt-8 px-4 md:px-6 lg:px-0">
+        <div class="flex flex-col space-y-5 w-full items-center mx-auto">
+          <div class="prose w-full px-4 md:px-6 lg:px-0">
             <h2>Markdown to HTML</h2>
             <h3>Markdown</h3>
             <p>Type or Copy/Clip your Markdown here 👇</p>
