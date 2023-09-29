@@ -2,7 +2,7 @@
 export default {
   theme: {
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/typography"), require("daisyui")],
   content: [
     "./components/**/*.{js,vue,ts}",
     "./layouts/**/*.vue",

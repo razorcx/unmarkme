@@ -18,10 +18,12 @@
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.16",
+    "daisyui": "^3.8.1",
     "isomorphic-dompurify": "^1.9.0",
     "jsdom": "^22.1.0",
     "marked": "^9.0.3",
     "nuxt-icon": "^0.5.0",
-    "turndown": "^7.1.2"
+    "turndown": "^7.1.2",
+    "vue-gtag-next": "^1.14.0"
   }
 }

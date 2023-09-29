@@ -205,6 +205,16 @@
 import { ref } from "vue";
 import { Dialog, DialogPanel } from "@headlessui/vue";
 
+useHead({
+  title: `unMarkme - Convert your HTML to Markdown or Markdown to HTML in Realtime`,
+  meta: [
+    {
+      name: "description",
+      content: "Convert your HTML to Markdown or Markdown to HTML in Realtime",
+    },
+  ],
+});
+
 const navigation = [
   { name: "HTML 👉 Markdown", href: "/unmark" },
   { name: "Markdown 👉 HTML", href: "/unmark" },
@@ -212,3 +222,5 @@ const navigation = [
 
 const mobileMenuOpen = ref(false);
 </script>
+
+
