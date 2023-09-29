@@ -144,7 +144,7 @@
           </p>
           <div class="mt-10 flex items-center justify-center gap-x-6">
             <a
-              href="/unmark"
+              href="/convert"
               class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >Start Converting</a
             >
@@ -198,6 +198,8 @@
         />
       </div>
     </div>
+    
+    <UnmarkmeFooter class="mt-6 bg-white" />
   </div>
 </template>
 
@@ -216,11 +218,9 @@ useHead({
 });
 
 const navigation = [
-  { name: "HTML 👉 Markdown", href: "/unmark" },
-  { name: "Markdown 👉 HTML", href: "/unmark" },
+  { name: "HTML 👉 Markdown", href: "/convert" },
+  { name: "Markdown 👉 HTML", href: "/convert" },
 ];
 
 const mobileMenuOpen = ref(false);
 </script>
-
-
