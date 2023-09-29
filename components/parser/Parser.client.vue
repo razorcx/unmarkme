@@ -1,7 +1,7 @@
 <template>
   <div class="grid w-full min-h-screen mx-auto">
     <div class="relative h-full container mx-auto">
-      <UnmarkmeNav class="z-[999] bg-transparent bg-white" />
+      <UnmarkmeNav class="z-[999] bg-white" />
       <main class="flex flex-wrap md:flex-nowrap">
         <div
           class="flex flex-col space-y-5 w-full items-center mt-12 mx-auto md:border-r-2"
