@@ -72,7 +72,7 @@
 </template>
 
 <script setup>
-const sampleHtml = `***Sample HTML***
+const sampleHtml = `<p>Sample HTML</p>
 <h1>This is H1 Header</h1>
 <h2>This is H2 Header</h2>
 <h3>This is H3 Header</h3>
