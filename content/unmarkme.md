@@ -14,7 +14,7 @@ Elevate your development experience with our cutting-edge application designed t
 
 **Key Features:**
 
-1. **Real-Time Conversion**: Effortlessly switch between HTML and Markup in real-time, eliminating the need for manual conversion.
+1. **Real-Time Conversion**: Effortlessly switch between HTML and Markdown or from Markdown to HTML in real-time, eliminating the need for manual conversion.
 
 2. **Intuitive Interface**: Enjoy a user-friendly experience, whether you're a seasoned developer or just starting out.
 
