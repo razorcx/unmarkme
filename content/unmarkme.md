@@ -2,14 +2,14 @@
 
 # Empower Your Development Workflow!
 
-[Convert HTML to Markup or Markup to HTML in Realtime!]{.font-bold}
+[Convert HTML to Markdown or Markdown to HTML in Realtime!]{.font-bold}
 ::
 
-Elevate your development experience with our cutting-edge application designed to streamline your workflow like never before. Introducing a powerful tool that enables you to effortlessly convert HTML to Markup or Markup to HTML in real-time.
+Elevate your development experience with our cutting-edge application designed to streamline your workflow like never before. Introducing a powerful tool that enables you to effortlessly convert HTML to Markdown or Markdown to HTML in real-time.
 
 **Key Features:**
 
-1. **Real-time Conversion:** Experience seamless and instant transformation of your code, allowing you to switch between HTML and Markup effortlessly.
+1. **Real-time Conversion:** Experience seamless and instant transformation of your code, allowing you to switch between HTML and Markdown effortlessly.
 
 2. **Efficiency Unleashed:** Boost your productivity by eliminating the need for manual conversion, allowing you to focus on what matters most - crafting exceptional web content.
 

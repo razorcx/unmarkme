@@ -140,7 +140,7 @@
             unMarkme
           </h1>
           <p class="mt-6 text-lg leading-8 text-gray-600">
-            Convert your HTML to Markup or Markup to HTML in Realtime
+            Convert your HTML to Markdown or Markdown to HTML in Realtime
           </p>
           <div class="mt-10 flex items-center justify-center gap-x-6">
             <a
