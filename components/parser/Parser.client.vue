@@ -8,7 +8,7 @@
         >
           <div class="prose w-full px-4 md:px-6 lg:px-0">
             <h2>HTML to Markdown</h2>
-            <h3>HTML</h3>
+            <h3>HTML Markup</h3>
             <div class="flex justify-between items-center">
               <p>Type or Copy/Clip your HTML here 👇</p>
               <NuxtLink
@@ -26,10 +26,11 @@
             <div>
               <pre class="prose p-6 shadow-md">{{ markdownComputed }}</pre>
             </div>
-            <h3>Back to HTML with TailwindCSS Prose</h3>
+            <h3>HTML in the Browser</h3>
             <div v-html="backToHtml" class="border px-6 py-4 shadow-md"></div>
           </div>
         </div>
+
         <div class="flex flex-col space-y-5 w-full items-center mx-auto md:pl-6">
           <div class="prose w-full px-4 md:px-6 lg:px-0">
             <h2>Markdown to HTML</h2>
@@ -49,17 +50,19 @@
               class="w-full h-64 p-6 border overflow-auto shadow-md"
             >
             </textarea>
-            <h3>HTML</h3>
+            <h3>HTML Markup</h3>
             <div>
               <pre class="prose p-6 shadow-md">{{ htmlComputed }}</pre>
             </div>
-            <h3>Back to Markdown</h3>
+            <h3>HTML in the Browser</h3>
+            <div v-html="htmlComputed" class="border px-6 py-4 shadow-md"></div>
+            <!-- <h3>Back to Markdown</h3>
             <div>
               <pre
                 class="prose border p-6 bg-white text-black rounded-none shadow-md"
                 >{{ backToMarkdown }}</pre
               >
-            </div>
+            </div> -->
           </div>
         </div>
       </main>
@@ -77,7 +80,8 @@ const sampleHtml = `***Sample HTML***
 <p>Hello World!</p>
 `;
 
-const sampleMarkdown = `***Sample Markdown***
+const sampleMarkdown = `Sample Markdown
+
 This is unMarkme
 =========
 unMarkme is awesome`;
