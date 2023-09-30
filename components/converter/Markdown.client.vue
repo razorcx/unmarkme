@@ -1,11 +1,11 @@
 <template>
   <ConverterCardBase
     title="Markdown to HTML Converter"
-    titleBg="bg-[#1191d4]/20"
+    titleBg="bg-[#4f46e5]/20"
   >
     <section>
       <h3><span
-          class="inline-flex justify-center items-center rounded-full bg-[#1191d4]/20 px-3"
+          class="inline-flex justify-center items-center rounded-full bg-[#4f46e5]/20 px-3"
           >1</span
         > Markdown</h3>
       <div class="flex justify-between items-center space-x-3">
@@ -28,7 +28,7 @@
 
     <section>
       <h3><span
-          class="inline-flex justify-center items-center rounded-full bg-[#1191d4]/20 px-3"
+          class="inline-flex justify-center items-center rounded-full bg-[#4f46e5]/20 px-3"
           >2</span
         > Converted to HTML</h3>
       <div>
@@ -38,7 +38,7 @@
 
     <section>
       <h3><span
-          class="inline-flex justify-center items-center rounded-full bg-[#1191d4]/20 px-3"
+          class="inline-flex justify-center items-center rounded-full bg-[#4f46e5]/20 px-3"
           >3</span
         > Rendered Output</h3>
       <div

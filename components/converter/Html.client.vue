@@ -1,12 +1,12 @@
 <template>
   <ConverterCardBase
     title="HTML to Markdown Converter"
-    titleBg="bg-[#f16524]/20"
+    titleBg="bg-[#db2777]/20"
   >
     <section>
       <h3>
         <span
-          class="inline-flex justify-center items-center rounded-full bg-[#f16524]/20 px-3"
+          class="inline-flex justify-center items-center rounded-full bg-[#db2777]/20 px-3"
           >1</span
         >
         HTML Markup
@@ -31,7 +31,7 @@
     <section>
       <h3>
         <span
-          class="inline-flex justify-center items-center rounded-full bg-[#f16524]/20 px-3"
+          class="inline-flex justify-center items-center rounded-full bg-[#db2777]/20 px-3"
           >2</span
         >
         Converted to Markdown
@@ -46,7 +46,7 @@
     <section>
       <h3>
         <span
-          class="inline-flex justify-center items-center rounded-full bg-[#f16524]/20 px-3"
+          class="inline-flex justify-center items-center rounded-full bg-[#db2777]/20 px-3"
           >3</span
         >
         Rendered Output

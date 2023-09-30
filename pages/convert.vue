@@ -1,7 +1,7 @@
 <template>
   <div class="grid h-full min-h-screen grid-template-rows-[1fr_auto]">
     <div class="relative container min-h-[calc(100vh-96px)] mx-auto">
-      <ConverterNav class="z-[999] " />
+      <ConverterNav class="z-[999] hidden md:block" />
       <Converter />
     </div>
 
