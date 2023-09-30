@@ -1,33 +1,42 @@
 <template>
-  <div class="prose w-full px-3 md:px-0">
+  <div class="prose">
     <h2 class="bg-[#f16524]/20 py-4 text-center">HTML to Markdown Converter</h2>
-    <h3>1. HTML Markup</h3>
-    <div class="flex justify-between items-center space-x-3">
-      <p>Type or Copy/Clip your HTML here 👇</p>
-      <button class="btn" @click="html = ''">Clear</button>
-      <NuxtLink
-        to="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started"
-        class="hover:text-slate-600"
-        >HTML Guide</NuxtLink
+
+    <section>
+      <h3>1. HTML Markup</h3>
+      <div class="flex justify-between items-center space-x-3">
+        <p>Type or Copy/Clip your HTML here 👇</p>
+        <button class="btn" @click="html = ''">Clear</button>
+        <NuxtLink
+          to="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started"
+          class="hover:text-slate-600"
+          >HTML Guide</NuxtLink
+        >
+      </div>
+      <textarea
+        v-model="html"
+        placeholder="Type HTML here"
+        class="w-full h-64 p-6 border overflow-auto shadow-md"
       >
-    </div>
-    <textarea
-      v-model="html"
-      placeholder="Type HTML here"
-      class="w-full h-64 p-6 border overflow-auto shadow-md"
-    >
-    </textarea>
-    <h3>2. Converted to Markdown</h3>
-    <div>
-      <pre class="prose p-6 shadow-md overflow-auto">{{
-        markdownComputed
-      }}</pre>
-    </div>
-    <h3>3. Rendered Output</h3>
-    <div
-      v-html="renderedHtml"
-      class="border px-6 py-4 shadow-md overflow-auto"
-    ></div>
+      </textarea>
+    </section>
+
+    <section>
+      <h3>2. Converted to Markdown</h3>
+      <div>
+        <pre class="prose p-6 shadow-md overflow-auto">{{
+          markdownComputed
+        }}</pre>
+      </div>
+    </section>
+
+    <section>
+      <h3>3. Rendered Output</h3>
+      <div
+        v-html="renderedHtml"
+        class="border px-6 py-4 shadow-md overflow-auto bg-white"
+      ></div>
+    </section>
   </div>
 </template>
 
