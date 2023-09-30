@@ -4,7 +4,7 @@
       {{ title }}
     </h2>
 
-    <div class="prose  mx-auto px-4 md:px-0">
+    <div class="prose mx-auto px-4 md:px-4 prose:w-full">
       <slot />
     </div>
   </div>
