@@ -5,7 +5,7 @@
       <Converter />
     </div>
 
-    <UnmarkmeFooter class="bg-slate-100" />
+    <UnmarkmeFooter/>
   </div>
 </template>
 
