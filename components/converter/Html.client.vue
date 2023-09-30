@@ -5,10 +5,7 @@
   >
     <section>
       <h3>
-        <span
-          class="inline-flex justify-center items-center rounded-full bg-[#db2777]/20 px-3"
-          >1</span
-        >
+        <span class="step">1</span>
         HTML Markup
       </h3>
       <div class="flex justify-between items-center space-x-3">
@@ -23,32 +20,24 @@
       <textarea
         v-model="html"
         placeholder="Type HTML here"
-        class="w-full h-64 p-6 border overflow-auto shadow-md"
+        class="w-full h-64 p-6 border overflow-auto shadow-md bg-[#db2777]/5"
       >
       </textarea>
     </section>
 
     <section>
       <h3>
-        <span
-          class="inline-flex justify-center items-center rounded-full bg-[#db2777]/20 px-3"
-          >2</span
-        >
+        <span class="step">2</span>
         Converted to Markdown
       </h3>
-      <div>
-        <pre class="prose p-6 shadow-md overflow-auto">{{
-          markdownComputed
-        }}</pre>
-      </div>
+      <pre class="prose p-6 shadow-md overflow-auto">{{
+        markdownComputed
+      }}</pre>
     </section>
 
     <section>
       <h3>
-        <span
-          class="inline-flex justify-center items-center rounded-full bg-[#db2777]/20 px-3"
-          >3</span
-        >
+        <span class="step">3</span>
         Rendered Output
       </h3>
       <div
@@ -74,3 +63,9 @@ const html = ref(sampleHtml);
 const markdownComputed = computed(() => turndownService.turndown(html.value));
 const renderedHtml = computed(() => useMarkedService(markdownComputed.value));
 </script>
+
+<style scoped>
+.step {
+  @apply inline-flex justify-center items-center rounded-full bg-[#db2777]/20 px-3 border-slate-400 border mr-1;
+}
+</style>
