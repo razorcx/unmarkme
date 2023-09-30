@@ -1,16 +1,17 @@
 <template>
-  <div class="grid w-full min-h-screen mx-auto">
-    <div class="relative h-full container mx-auto">
+  <div class="grid w-full h-full min-h-screen mx-auto grid-template-rows-[1fr_auto]">
+    <div class="relative container mx-auto min-h-[calc(100vh-96px)]">
       <UnmarkmeNav class="z-[999] bg-white" />
-      <main class="flex flex-wrap md:flex-nowrap space-y-24 md:space-y-0 mt-10 ">
+      <main class="flex flex-wrap md:flex-nowrap space-y-24 md:space-y-0  ">
         <div
           class="flex flex-col space-y-5 w-full items-center mx-auto md:border-r-2 md:pr-6"
         >
           <div class="prose w-full px-4 md:px-6 lg:px-0">
-            <h2>HTML to Markdown</h2>
+            <h2 class="bg-[#f16524]/20 py-4 text-center">HTML to Markdown</h2>
             <h3>HTML Markup</h3>
-            <div class="flex justify-between items-center">
+            <div class="flex justify-between items-center space-x-3">
               <p>Type or Copy/Clip your HTML here 👇</p>
+              <button class="btn" @click="html = ''">Clear</button>
               <NuxtLink
                 to="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started" class="hover:text-slate-600"
                 >HTML Guide</NuxtLink
@@ -22,21 +23,22 @@
               class="w-full h-64 p-6 border overflow-auto shadow-md"
             >
             </textarea>
-            <h3>Markdown</h3>
+            <h3 >Markdown</h3>
             <div>
-              <pre class="prose p-6 shadow-md">{{ markdownComputed }}</pre>
+              <pre class="prose p-6 shadow-md overflow-auto">{{ markdownComputed }}</pre>
             </div>
             <h3>HTML in the Browser</h3>
-            <div v-html="backToHtml" class="border px-6 py-4 shadow-md"></div>
+            <div v-html="backToHtml" class="border px-6 py-4 shadow-md overflow-auto"></div>
           </div>
         </div>
 
         <div class="flex flex-col space-y-5 w-full items-center mx-auto md:pl-6">
           <div class="prose w-full px-4 md:px-6 lg:px-0">
-            <h2>Markdown to HTML</h2>
+            <h2 class="bg-[#1191d4]/20 py-4 text-center">Markdown to HTML</h2>
             <h3>Markdown</h3>
-            <div class="flex justify-between items-center">
+            <div class="flex justify-between items-center space-x-3">
               <p>Type or Copy/Clip your Markdown here 👇</p>
+              <button class="btn" @click="markdown = ''">Clear</button>
               <NuxtLink
                 to="https://www.markdownguide.org/basic-syntax"
                 class="hover:text-slate-600"
@@ -52,22 +54,15 @@
             </textarea>
             <h3>HTML Markup</h3>
             <div>
-              <pre class="prose p-6 shadow-md">{{ htmlComputed }}</pre>
+              <pre class="prose p-6 shadow-md overflow-auto">{{ htmlComputed }}</pre>
             </div>
             <h3>HTML in the Browser</h3>
-            <div v-html="htmlComputed" class="border px-6 py-4 shadow-md"></div>
-            <!-- <h3>Back to Markdown</h3>
-            <div>
-              <pre
-                class="prose border p-6 bg-white text-black rounded-none shadow-md"
-                >{{ backToMarkdown }}</pre
-              >
-            </div> -->
+            <div v-html="htmlComputed" class="border px-6 py-4 shadow-md overflow-auto"></div>
           </div>
         </div>
       </main>
     </div>
-    <UnmarkmeFooter class="mt-6 bg-white" />
+    <UnmarkmeFooter class=" bg-white" />
   </div>
 </template>
 
@@ -76,15 +71,20 @@ const sampleHtml = `<p>Sample HTML</p>
 <h1>This is H1 Header</h1>
 <h2>This is H2 Header</h2>
 <h3>This is H3 Header</h3>
-<h4>This is H4 Header</h4>
 <p>Hello World!</p>
 `;
 
-const sampleMarkdown = `Sample Markdown
+const sampleMarkdown = `Sample HTML
 
-This is unMarkme
-=========
-unMarkme is awesome`;
+This is H1 Header
+=================
+
+This is H2 Header
+-----------------
+
+### This is H3 Header
+
+Hello World!`;
 
 const html = ref(sampleHtml);
 const markdown = ref(sampleMarkdown);
