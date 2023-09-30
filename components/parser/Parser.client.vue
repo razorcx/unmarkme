@@ -7,7 +7,7 @@
           class="flex flex-col space-y-5 w-full items-center mx-auto md:border-r-2 md:pr-6"
         >
           <div class="prose w-full px-4 md:px-6 lg:px-0">
-            <h2 class="bg-[#f16524]/20 py-4 text-center">HTML to Markdown</h2>
+            <h2 class="bg-[#f16524]/20 py-4 text-center">HTML to Markdown Converter</h2>
             <h3>1. HTML Markup</h3>
             <div class="flex justify-between items-center space-x-3">
               <p>Type or Copy/Clip your HTML here 👇</p>
@@ -34,7 +34,7 @@
 
         <div class="flex flex-col space-y-5 w-full items-center mx-auto md:pl-6">
           <div class="prose w-full px-4 md:px-6 lg:px-0">
-            <h2 class="bg-[#1191d4]/20 py-4 text-center">Markdown to HTML</h2>
+            <h2 class="bg-[#1191d4]/20 py-4 text-center">Markdown to HTML Converter</h2>
             <h3>1. Markdown</h3>
             <div class="flex justify-between items-center space-x-3">
               <p>Type or Copy/Clip your Markdown here 👇</p>
@@ -67,14 +67,14 @@
 </template>
 
 <script setup>
-const sampleHtml = `<p>Sample HTML</p>
+const sampleHtml = `<p>Sample ✏️ HTML</p>
 <h1>This is H1 Header</h1>
 <h2>This is H2 Header</h2>
 <h3>This is H3 Header</h3>
 <p>Hello World!</p>
 `;
 
-const sampleMarkdown = `Sample HTML
+const sampleMarkdown = `Sample 🖋️ Markdown
 
 This is H1 Header
 =================
