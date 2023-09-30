@@ -1,8 +1,6 @@
 <template>
   <div>
-    <ClientOnly>
-      <Parser />
-    </ClientOnly>
+    <Converter />
   </div>
 </template>
 
