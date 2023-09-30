@@ -8,7 +8,7 @@
         >
           <div class="prose w-full px-4 md:px-6 lg:px-0">
             <h2 class="bg-[#f16524]/20 py-4 text-center">HTML to Markdown</h2>
-            <h3>HTML Markup</h3>
+            <h3>1. HTML Markup</h3>
             <div class="flex justify-between items-center space-x-3">
               <p>Type or Copy/Clip your HTML here 👇</p>
               <button class="btn" @click="html = ''">Clear</button>
@@ -23,11 +23,11 @@
               class="w-full h-64 p-6 border overflow-auto shadow-md"
             >
             </textarea>
-            <h3 >Markdown</h3>
+            <h3 >2. Converted to Markdown</h3>
             <div>
               <pre class="prose p-6 shadow-md overflow-auto">{{ markdownComputed }}</pre>
             </div>
-            <h3>HTML in the Browser</h3>
+            <h3>3. Displays HTML in the Browser</h3>
             <div v-html="backToHtml" class="border px-6 py-4 shadow-md overflow-auto"></div>
           </div>
         </div>
@@ -35,7 +35,7 @@
         <div class="flex flex-col space-y-5 w-full items-center mx-auto md:pl-6">
           <div class="prose w-full px-4 md:px-6 lg:px-0">
             <h2 class="bg-[#1191d4]/20 py-4 text-center">Markdown to HTML</h2>
-            <h3>Markdown</h3>
+            <h3>1. Markdown</h3>
             <div class="flex justify-between items-center space-x-3">
               <p>Type or Copy/Clip your Markdown here 👇</p>
               <button class="btn" @click="markdown = ''">Clear</button>
@@ -52,11 +52,11 @@
               class="w-full h-64 p-6 border overflow-auto shadow-md"
             >
             </textarea>
-            <h3>HTML Markup</h3>
+            <h3>2. Converted to HTML</h3>
             <div>
               <pre class="prose p-6 shadow-md overflow-auto">{{ htmlComputed }}</pre>
             </div>
-            <h3>HTML in the Browser</h3>
+            <h3>3. Displays HTML in the Browser</h3>
             <div v-html="htmlComputed" class="border px-6 py-4 shadow-md overflow-auto"></div>
           </div>
         </div>
