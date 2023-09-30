@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <nav class="justify-between items-center px-5 py-4 mx-auto">
+    <nav class="flex justify-between items-center px-5 py-4 mx-auto min-h-[80px]">
       <a href="/" class="font-semibold flex items-center"
         ><img
           src="@/assets/images/unmarkme-logo.png"

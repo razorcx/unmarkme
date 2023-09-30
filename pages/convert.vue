@@ -1,6 +1,8 @@
 <template>
   <div>
-    <Parser />
+    <ClientOnly>
+      <Parser />
+    </ClientOnly>
   </div>
 </template>
 
